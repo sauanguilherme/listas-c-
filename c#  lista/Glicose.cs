@@ -1,0 +1,14 @@
+using System;
+class Glicose {
+    static void Main() {
+        Console.Write("Quantidade de glicose (mg/dl): ");
+        double glicose = double.Parse(Console.ReadLine());
+
+        if (glicose <= 100)
+            Console.WriteLine("Classificação: Normal");
+        else if (glicose <= 140)
+            Console.WriteLine("Classificação: Elevado");
+        else
+            Console.WriteLine("Classificação: Diabetes");
+    }
+}
